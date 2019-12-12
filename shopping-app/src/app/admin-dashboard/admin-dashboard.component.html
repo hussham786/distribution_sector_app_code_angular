@@ -1,0 +1,873 @@
+<div id="adminDashboard">
+  <div class="row">
+    <div class="col-md-4">
+      <!-- Category section -->
+      <!--Card-->
+      <mdb-card cascade="true" wider="true">
+  
+        <!--Card image-->
+        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+          <mdb-card-img src="../assets/image/categories.jpg"></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--/Card image-->
+  
+        <mdb-card-body cascade="true" class="text-center">
+          <!--Card content-->
+          <!--Title-->
+          <h4 class="card-title">
+            <strong>Category</strong>
+          </h4>
+          <button type="button" class="btn btn-success px-4" data-toggle="modal" data-target="#basicExample"
+          (click)="categoryModal.show()"><i class="fas fa-plus" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-primary px-4" data-toggle="modal" data-target="#basicExample"
+          (click)="categoryEditModal.show()"><i class="fas fa-edit" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-danger px-4" data-toggle="modal" data-target="#basicExample"
+          (click)="categoryDeleteModal.show()"><i class="fas fa-trash" aria-hidden="true"></i></button>
+          <!-- <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Add</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Edit</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Delete</a> -->
+        </mdb-card-body>
+        <!--/.Card content-->
+  
+      </mdb-card>
+      <!--/.Card-->
+    </div>
+  
+    <div class="col-md-4">
+      <!-- Sub Category section -->
+      <!--Card-->
+      <mdb-card cascade="true" wider="true">
+  
+        <!--Card image-->
+        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+          <mdb-card-img src="../assets/image/sub-categories.jpg"></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--/Card image-->
+  
+        <mdb-card-body cascade="true" class="text-center">
+          <!--Card content-->
+          <!--Title-->
+          <h4 class="card-title">
+            <strong>Sub Category</strong>
+          </h4>
+          <button type="button" class="btn btn-success px-4" data-toggle="modal" data-target="#basicExample"
+          (click)="subCategoryModal.show()"><i class="fas fa-plus" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-primary px-4" data-toggle="modal" data-target="#basicExample"
+          (click)="subCategoryEditModal.show()"><i class="fas fa-edit" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-danger px-4"><i class="fas fa-trash" aria-hidden="true"></i></button>
+          <!-- <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Add</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Edit</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Delete</a> -->
+        </mdb-card-body>
+        <!--/.Card content-->
+  
+      </mdb-card>
+      <!--/.Card-->
+    </div>
+
+    <div class="col-md-4">
+      <!-- Product section -->
+      <!--Card-->
+      <mdb-card cascade="true" wider="true">
+  
+        <!--Card image-->
+        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+          <mdb-card-img src="../assets/image/product.jpg"></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--/Card image-->
+  
+        <mdb-card-body cascade="true" class="text-center">
+          <!--Card content-->
+          <!--Title-->
+          <h4 class="card-title">
+            <strong>Product</strong>
+          </h4>
+          <button type="button" class="btn btn-success px-4"><i class="fas fa-plus" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-primary px-4"><i class="fas fa-edit" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-danger px-4"><i class="fas fa-trash" aria-hidden="true"></i></button>
+          <!-- <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Add</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Edit</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Delete</a> -->
+        </mdb-card-body>
+        <!--/.Card content-->
+  
+      </mdb-card>
+      <!--/.Card-->
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <!-- Varient section -->
+      <!--Card-->
+      <mdb-card cascade="true" wider="true">
+  
+        <!--Card image-->
+        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+          <mdb-card-img src="../assets/image/varient.jpg"></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--/Card image-->
+  
+        <mdb-card-body cascade="true" class="text-center">
+          <!--Card content-->
+          <!--Title-->
+          <h4 class="card-title">
+            <strong>Varient</strong>
+          </h4>
+          <button type="button" class="btn btn-success px-4"><i class="fas fa-plus" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-primary px-4"><i class="fas fa-edit" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-danger px-4"><i class="fas fa-trash" aria-hidden="true"></i></button>
+          <!-- <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Add</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Edit</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Delete</a> -->
+        </mdb-card-body>
+        <!--/.Card content-->
+  
+      </mdb-card>
+      <!--/.Card-->
+    </div>
+  
+    <div class="col-md-4">
+      <!-- Brand section -->
+      <!--Card-->
+      <mdb-card cascade="true" wider="true">
+  
+        <!--Card image-->
+        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+          <mdb-card-img src="../assets/image/brand.jpg"></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--/Card image-->
+  
+        <mdb-card-body cascade="true" class="text-center">
+          <!--Card content-->
+          <!--Title-->
+          <h4 class="card-title">
+            <strong>Brand</strong>
+          </h4>
+          <button type="button" class="btn btn-success px-4"><i class="fas fa-plus" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-primary px-4"><i class="fas fa-edit" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-danger px-4"><i class="fas fa-trash" aria-hidden="true"></i></button>
+          <!-- <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Add</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Edit</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Delete</a> -->
+        </mdb-card-body>
+        <!--/.Card content-->
+  
+      </mdb-card>
+      <!--/.Card-->
+    </div>
+
+    <div class="col-md-4">
+      <!-- Product colour section -->
+      <!--Card-->
+      <mdb-card cascade="true" wider="true">
+  
+        <!--Card image-->
+        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+          <mdb-card-img src="../assets/image/colour.jpg"></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--/Card image-->
+  
+        <mdb-card-body cascade="true" class="text-center">
+          <!--Card content-->
+          <!--Title-->
+          <h4 class="card-title">
+            <strong>Product Colour</strong>
+          </h4>
+          <button type="button" class="btn btn-success px-4"><i class="fas fa-plus" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-primary px-4"><i class="fas fa-edit" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-danger px-4"><i class="fas fa-trash" aria-hidden="true"></i></button>
+          <!-- <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Add</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Edit</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Delete</a> -->
+        </mdb-card-body>
+        <!--/.Card content-->
+  
+      </mdb-card>
+      <!--/.Card-->
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      
+    </div>
+  
+    <div class="col-md-4">
+      <!-- Manage user section -->
+      <!--Card-->
+      <mdb-card cascade="true" wider="true">
+  
+        <!--Card image-->
+        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+          <mdb-card-img src="../assets/image/manage-user.jpg"></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--/Card image-->
+  
+        <mdb-card-body cascade="true" class="text-center">
+          <!--Card content-->
+          <!--Title-->
+          <h4 class="card-title">
+            <strong>Manage User</strong>
+          </h4>
+          <button type="button" class="btn btn-success px-4"><i class="fas fa-plus" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-primary px-4"><i class="fas fa-edit" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-danger px-4"><i class="fas fa-trash" aria-hidden="true"></i></button>
+          <!-- <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Add</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Edit</a>
+          <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Delete</a> -->
+        </mdb-card-body>
+        <!--/.Card content-->
+  
+      </mdb-card>
+      <!--/.Card-->
+    </div>
+  </div>
+
+  <!-- Adding a new category --------------------------------------------------------------------------------------------------->
+  <div mdbModal #categoryModal="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h4 class="modal-title white-text w-100 font-weight-bold py-2">Add Category</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="categoryModal.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <form id="catAddForm" style="color: #757575;" [formGroup]="catAddForm" (ngSubmit)="addCategory(catAddForm)">
+      <div class="modal-body">
+        <div class="md-form mb-5">
+          <mdb-icon fas icon="file-signature" class="prefix"></mdb-icon>
+          <input type="text" id="catName" class="form-control" mdbInput mdbValidate
+                 formControlName="catName">
+          <label for="catName">Category name</label>
+          <mdb-error
+            *ngIf="catName.invalid && (catName.dirty || catName.touched)">
+            Category Name can't be left blank
+          </mdb-error>
+          <mdb-success
+            *ngIf="catName.valid && (catName.dirty || catName.touched)">
+            Input valid
+          </mdb-success>
+        </div>
+
+        <div class="md-form">
+          <mdb-icon fas icon="info-circle" class="prefix"></mdb-icon>
+          <input type="text" id="catDesc" class="form-control" mdbInput mdbValidate
+                 formControlName="catDesc" (input)="generateAddBtn(0)">
+          <label for="catDesc">Category Description</label>
+          <mdb-error
+            *ngIf="catDesc.invalid && (catDesc.dirty || catDesc.touched)">
+            Category Description can't be left blank
+          </mdb-error>
+          <mdb-success
+            *ngIf="catDesc.valid && (catDesc.dirty || catDesc.touched)">
+            Input valid
+          </mdb-success>
+        </div>
+      
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+          <button id="addCatBtn" style="display: none;" type="submit" class="btn btn-success px-4">Add</button>
+          <button type="reset" class="btn btn-danger px-4" (click)="resetField(0)">Reset</button>
+      </div>
+    </form>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<button id="showCatAddSuccess" style="display: none" type="button" mdbBtn color="default" rounded="true" data-toggle="modal" data-target="#basicExample" (click)="catAddSuccess.show()"
+  mdbWavesEffect>Launch Modal</button>
+
+<div mdbModal #catAddSuccess="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead">Success</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="catAddSuccess.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          <mdb-icon fas icon="check" size="4x" class="mb-3 animated rotateIn"></mdb-icon>
+          <p>
+            <span *ngIf="catStatus == 1">Category added successfully</span>
+            <span *ngIf="catStatus == 2">Category updated successfully</span>
+            <span *ngIf="catStatus == 3">Category deleted successfully</span>
+          </p>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" mdbBtn color="success" outline="true" class="waves-effect" mdbWavesEffect (click)="catAddSuccess.hide()">Close</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- End of category add form ---------------------------------------------------------------------------------------------------------->
+
+<!-- Start of category edit form -------------------------------------------------------------------------------------------------------->
+<div mdbModal #categoryEditModal="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h4 class="modal-title white-text w-100 font-weight-bold py-2">Edit Category</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="categoryEditModal.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light justify-content-between">
+        <mdb-navbar-brand>
+            <a class="navbar-brand" href=""></a>
+        </mdb-navbar-brand>
+        <links>
+          <form id="catSearchForm" class="form-inline md-form mr-auto mb-4" [formGroup]="catSearchForm">
+              <div class="row">
+                  <div class="col-md-6">
+                      <input id="searchCat" class="form-control mr-sm-4" mdbInput mdbValidate
+                      formControlName="searchCat" type="text" placeholder="Search" aria-label="Search" (input)="searchCatData(catSearchForm)">
+                  </div>
+                  <!-- <div class="col-md-6">
+                      <mdb-select formControlName="catSelect"
+                      class="colorful-select dropdown-primary" placeholder="Choose your option" 
+                      label="Select to search" [options]="selectOption"></mdb-select>
+                  </div> -->
+              </div>
+            <!-- <button mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light" mdbWavesEffect type="submit">Search</button> -->
+          </form>
+        </links>
+      </mdb-navbar>
+
+      <table mdbTable mdbTableScroll scrollX="true" scrollY="true" maxHeight="500" bordered="true">
+        <thead>
+          <tr>
+            <th scope="col">Category Id</th>
+            <th scope="col">Category Name</th>
+            <th scope="col">Category Description</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of allCatList; let i = index">
+            <!-- <form id="editCatForm" style="color: #757575;" [formGroup]="editCatForm" (ngSubmit)="saveCategory(editCatForm)"> -->
+              <!-- <input id="catId" class="form-control" formControlName="catId" type="hidden"> -->
+            <th scope="row">{{item.catId}}</th>
+                <td>
+                  <span>{{item.catName}}</span>
+                </td>
+                <td>
+                  <span>{{item.catDesc}}</span>
+                </td>
+            <td>
+              <button id="btnEdit{{item.catId}}" type="button" class="btn btn-primary px-3" data-toggle="modal" data-target="#basicExample"
+              (click)="categoryEdit.show()"><i class="fas fa-edit" aria-hidden="true"></i></button>
+              <!-- <button id="btnSave{{item.catId}}" style="display: none" type="submit" class="btn btn-primary px-3">Save</button> -->
+            </td>
+
+        <div mdbModal #categoryEdit="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-notify modal-info" role="document">
+           <!--Content-->
+           <div class="modal-content">
+             <!--Header-->
+             <div class="modal-header text-center">
+               <h4 class="modal-title white-text w-100 font-weight-bold py-2">Edit Category</h4>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="categoryEdit.hide()">
+                 <span aria-hidden="true" class="white-text">&times;</span>
+               </button>
+             </div>
+       
+             <!--Body-->
+             <form id="catAddForm" style="color: #757575;" [formGroup]="catAddForm" (ngSubmit)="editCategory(catAddForm, item.catId)">
+             <div class="modal-body">
+               <div class="md-form mb-5">
+                 <mdb-icon fas icon="file-signature" class="prefix"></mdb-icon>
+                 <input type="text" id="catName" class="form-control" mdbInput mdbValidate
+                        formControlName="catName" [(value)]="item.catName">
+                 <label for="catName">Category name</label>
+                 <mdb-error
+                   *ngIf="catName.invalid && (catName.dirty || catName.touched)">
+                   Category Name can't be left blank
+                 </mdb-error>
+                 <mdb-success
+                   *ngIf="catName.valid && (catName.dirty || catName.touched)">
+                   Input valid
+                 </mdb-success>
+               </div>
+       
+               <div class="md-form">
+                 <mdb-icon fas icon="info-circle" class="prefix"></mdb-icon>
+                 <input type="text" id="catDesc" class="form-control" mdbInput mdbValidate
+                        formControlName="catDesc" [(value)]="item.catDesc" (input)="generateAddBtn(item.catId)">
+                 <label for="catDesc">Category Description</label>
+                 <mdb-error
+                   *ngIf="catDesc.invalid && (catDesc.dirty)">
+                   Category Description can't be left blank
+                 </mdb-error>
+                 <mdb-success
+                   *ngIf="catDesc.valid && (catDesc.dirty)">
+                   Input valid
+                 </mdb-success>
+               </div>
+             
+             </div>
+       
+             <!--Footer-->
+             <div class="modal-footer justify-content-center">
+                 <button id="addCatBtn{{item.catId}}" style="display: none" type="submit" class="btn btn-info px-4">Save</button>
+                 <button type="reset" class="btn btn-danger px-4" (click)="resetField(item.catId)">Reset</button>
+             </div>
+           </form>
+           </div>
+           <!--/.Content-->
+         </div>
+       </div>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- End of category edit form --------------------------------------------------------------------------------------------------------->
+
+<!-- Start of category delete form ----------------------------------------------------------------------------------------------------->
+<div mdbModal #categoryDeleteModal="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-danger" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h4 class="modal-title white-text w-100 font-weight-bold py-2">Delete Category</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="categoryDeleteModal.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light justify-content-between">
+        <mdb-navbar-brand>
+            <a class="navbar-brand" href=""></a>
+        </mdb-navbar-brand>
+        <links>
+          <form id="catSearchForm" class="form-inline md-form mr-auto mb-4" [formGroup]="catSearchForm">
+              <div class="row">
+                  <div class="col-md-6">
+                      <input id="searchCat" class="form-control mr-sm-4" mdbInput mdbValidate
+                      formControlName="searchCat" type="text" placeholder="Search" aria-label="Search" (input)="searchCatData(catSearchForm)">
+                  </div>
+                  <!-- <div class="col-md-6">
+                      <mdb-select formControlName="catSelect"
+                      class="colorful-select dropdown-primary" placeholder="Choose your option" 
+                      label="Select to search" [options]="selectOption"></mdb-select>
+                  </div> -->
+              </div>
+            <!-- <button mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light" mdbWavesEffect type="submit">Search</button> -->
+          </form>
+        </links>
+      </mdb-navbar>
+
+      <table mdbTable mdbTableScroll scrollX="true" scrollY="true" maxHeight="500" bordered="true">
+        <thead>
+          <tr>
+            <th scope="col">Category Id</th>
+            <th scope="col">Category Name</th>
+            <th scope="col">Category Description</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of allCatList; let i = index">
+            <!-- <form id="editCatForm" style="color: #757575;" [formGroup]="editCatForm" (ngSubmit)="saveCategory(editCatForm)"> -->
+              <!-- <input id="catId" class="form-control" formControlName="catId" type="hidden"> -->
+            <th scope="row">{{item.catId}}</th>
+                <td>
+                  <span>{{item.catName}}</span>
+                </td>
+                <td>
+                  <span>{{item.catDesc}}</span>
+                </td>
+            <td>
+              <button id="btnDelete{{item.catId}}" type="button" class="btn btn-danger px-3"
+              (click)="deleteCategory(item.catId)"><i class="fas fa-trash" aria-hidden="true"></i></button>
+              <!-- <button id="btnSave{{item.catId}}" style="display: none" type="submit" class="btn btn-primary px-3">Save</button> -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- End of Category delete form ------------------------------------------------------------------------------------------------------->
+
+<!-- Start Sub Category add form ------------------------------------------------------------------------------------------------------->
+<div mdbModal #subCategoryModal="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h4 class="modal-title white-text w-100 font-weight-bold py-2">Add Sub Category</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="subCategoryModal.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <form id="subCatAddForm" style="color: #757575;" [formGroup]="subCatAddForm" (ngSubmit)="addSubCategory(subCatAddForm)">
+      <div class="modal-body">
+        <div class="md-form mb-5">
+          <mdb-icon fas icon="file-signature" class="prefix"></mdb-icon>
+          <input type="text" id="subCatName" class="form-control" mdbInput mdbValidate
+                 formControlName="subCatName">
+          <label for="subCatName">Sub Category name</label>
+          <mdb-error
+            *ngIf="subCatName.invalid && (subCatName.dirty || subCatName.touched)">
+            Sub Category Name can't be left blank
+          </mdb-error>
+          <mdb-success
+            *ngIf="subCatName.valid && (subCatName.dirty || subCatName.touched)">
+            Input valid
+          </mdb-success>
+        </div>
+
+        <div class="md-form">
+            <h6>Select Category</h6>
+            <select id="selectCat" formControlName="selectCat" class="form-control selectpicker" data-live-search="true" title="Choose Category">
+              <option *ngFor="let cat of allCatList" [value]="cat.catId">{{cat.catName}}</option>
+            </select>
+            <mdb-error
+                  *ngIf="selectCat.invalid && (selectCat.dirty || selectCat.touched)">
+                  Sub Category Name can't be left blank
+            </mdb-error>
+            <!-- <mdb-success
+                  *ngIf="selectCat.valid && (selectCat.dirty || selectCat.touched)">
+                  Input valid
+            </mdb-success> -->
+          </div>
+
+        <div class="md-form">
+          <mdb-icon fas icon="info-circle" class="prefix"></mdb-icon>
+          <input type="text" id="subCatDesc" class="form-control" mdbInput mdbValidate
+                 formControlName="subCatDesc" (input)="generateSubCatAddBtn(0)">
+          <label for="subCatDesc">Sub Category Description</label>
+          <mdb-error
+            *ngIf="subCatDesc.invalid && (subCatDesc.dirty || subCatDesc.touched)">
+            Sub Category Description can't be left blank
+          </mdb-error>
+          <mdb-success
+            *ngIf="subCatDesc.valid && (subCatDesc.dirty || subCatDesc.touched)">
+            Input valid
+          </mdb-success>
+        </div>
+      
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+          <button id="addSubCatBtn" style="display: none;" type="submit" class="btn btn-success px-4">Add</button>
+          <button type="reset" class="btn btn-danger px-4" (click)="resetField(0)">Reset</button>
+      </div>
+    </form>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<button id="showSubCatAddSuccess" style="display: none" type="button" mdbBtn color="default" rounded="true" data-toggle="modal" data-target="#basicExample" (click)="subCatAddSuccess.show()"
+  mdbWavesEffect>Launch Modal</button>
+
+<div mdbModal #subCatAddSuccess="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead">Success</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="subCatAddSuccess.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          <mdb-icon fas icon="check" size="4x" class="mb-3 animated rotateIn"></mdb-icon>
+          <p>
+            <span *ngIf="catStatus == 1">Sub Category added successfully</span>
+            <span *ngIf="catStatus == 2">Sub Category updated successfully</span>
+            <span *ngIf="catStatus == 3">Sub Category deleted successfully</span>
+          </p>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" mdbBtn color="success" outline="true" class="waves-effect" mdbWavesEffect (click)="subCatAddSuccess.hide()">Close</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- End of Sub Category add form ----------------------------------------------------------------------------------------------------->
+
+<!-- Start of Sub Category edit form -------------------------------------------------------------------------------------------------->
+<div mdbModal #subCategoryEditModal="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h4 class="modal-title white-text w-100 font-weight-bold py-2">Edit Sub Category</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="subCategoryEditModal.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light justify-content-between">
+        <mdb-navbar-brand>
+            <a class="navbar-brand" href=""></a>
+        </mdb-navbar-brand>
+        <links>
+          <form id="subCatSearchForm" class="form-inline md-form mr-auto mb-4" [formGroup]="subCatSearchForm">
+              <div class="row">
+                  <div class="col-md-6">
+                      <input id="searchSubCat" class="form-control mr-sm-4" mdbInput mdbValidate
+                      formControlName="searchSubCat" type="text" placeholder="Search" aria-label="Search" (input)="searchSubCatData(subCatSearchForm)">
+                  </div>
+              </div>
+          </form>
+        </links>
+      </mdb-navbar>
+
+      <table mdbTable mdbTableScroll scrollX="true" scrollY="true" maxHeight="500" bordered="true">
+        <thead>
+          <tr>
+            <th scope="col">Sub Category Id</th>
+            <th scope="col">Category Name</th>
+            <th scope="col">Sub Category Name</th>
+            <th scope="col">Sub Category Description</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of allSubCatList; let i = index">
+            <!-- <form id="editCatForm" style="color: #757575;" [formGroup]="editCatForm" (ngSubmit)="saveCategory(editCatForm)"> -->
+              <!-- <input id="catId" class="form-control" formControlName="catId" type="hidden"> -->
+            <th scope="row">{{item.subCatId}}</th>
+                <td *ngFor="let itr of item.catList">
+                  <span>{{itr.catName}}</span>
+                </td>
+                <td>
+                  <span>{{item.subCatName}}</span>
+                </td>
+                <td>
+                    <span>{{item.subCatDesc}}</span>
+                </td>
+            <td>
+              <button id="btnEditSubCat{{item.subCatId}}" type="button" class="btn btn-primary px-3" data-toggle="modal" data-target="#basicExample"
+              (click)="subCategoryEdit.show()"><i class="fas fa-edit" aria-hidden="true"></i></button>
+              <!-- <button id="btnSave{{item.catId}}" style="display: none" type="submit" class="btn btn-primary px-3">Save</button> -->
+            </td>
+
+        <div mdbModal #subCategoryEdit="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-notify modal-info" role="document">
+           <!--Content-->
+           <div class="modal-content">
+             <!--Header-->
+             <div class="modal-header text-center">
+               <h4 class="modal-title white-text w-100 font-weight-bold py-2">Edit Sub Category</h4>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="subCategoryEdit.hide()">
+                 <span aria-hidden="true" class="white-text">&times;</span>
+               </button>
+             </div>
+       
+             <!--Body-->
+             <form id="subCatAddForm" style="color: #757575;" [formGroup]="subCatAddForm" (ngSubmit)="editSubCategory(subCatAddForm, item.subCatId)">
+             <div class="modal-body">
+               <div class="md-form mb-5">
+                 <mdb-icon fas icon="file-signature" class="prefix"></mdb-icon>
+                 <input type="text" id="subCatName" class="form-control" mdbInput mdbValidate
+                        formControlName="subCatName" [(value)]="item.subCatName">
+                 <label for="subCatName">Sub Category Name</label>
+                 <mdb-error
+                   *ngIf="subCatName.invalid && (subCatName.dirty || subCatName.touched)">
+                   Sub Category Name can't be left blank
+                 </mdb-error>
+                 <mdb-success
+                   *ngIf="subCatName.valid && (subCatName.dirty || subCatName.touched)">
+                   Input valid
+                 </mdb-success>
+               </div>
+
+               <div class="md-form">
+                  <h6>Select Category</h6>
+                  <select id="selectCat" formControlName="selectCat" class="form-control selectpicker" data-live-search="true" title="Choose Category">
+                    <option *ngFor="let cat of allCatList" [(value)]="cat.catId">{{cat.catName}}</option>
+                  </select>
+                  <mdb-error
+                        *ngIf="selectCat.invalid && (selectCat.dirty || selectCat.touched)">
+                        Category Name can't be left blank
+                  </mdb-error>
+                  <!-- <mdb-success
+                        *ngIf="selectCat.valid && (selectCat.dirty || selectCat.touched)">
+                        Input valid
+                  </mdb-success> -->
+                </div>
+       
+               <div class="md-form">
+                 <mdb-icon fas icon="info-circle" class="prefix"></mdb-icon>
+                 <input type="text" id="subCatDesc" class="form-control" mdbInput mdbValidate
+                        formControlName="subCatDesc" [(value)]="item.subCatDesc" (input)="generateSubCatAddBtn(item.subCatId)">
+                 <label for="subCatDesc">Sub Category Description</label>
+                 <mdb-error
+                   *ngIf="subCatDesc.invalid && (subCatDesc.dirty)">
+                   Sub Category Description can't be left blank
+                 </mdb-error>
+                 <mdb-success
+                   *ngIf="subCatDesc.valid && (subCatDesc.dirty)">
+                   Input valid
+                 </mdb-success>
+               </div>
+             
+             </div>
+       
+             <!--Footer-->
+             <div class="modal-footer justify-content-center">
+                 <button id="addSubCatBtn{{item.subCatId}}" style="display: none" type="submit" class="btn btn-info px-4">Save</button>
+                 <button type="reset" class="btn btn-danger px-4" (click)="resetField(item.subCatId)">Reset</button>
+             </div>
+           </form>
+           </div>
+           <!--/.Content-->
+         </div>
+       </div>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- End of Sub Category edit form ---------------------------------------------------------------------------------------------------->
+
+<!-- Start of Sub Category delete form ------------------------------------------------------------------------------------------------>
+<div mdbModal #subCategoryDeleteModal="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-danger" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h4 class="modal-title white-text w-100 font-weight-bold py-2">Delete Sub Category</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="subCategoryDeleteModal.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light justify-content-between">
+        <mdb-navbar-brand>
+            <a class="navbar-brand" href=""></a>
+        </mdb-navbar-brand>
+        <links>
+          <form id="subCatSearchForm" class="form-inline md-form mr-auto mb-4" [formGroup]="subCatSearchForm">
+              <div class="row">
+                  <div class="col-md-6">
+                      <input id="searchSubCat" class="form-control mr-sm-4" mdbInput mdbValidate
+                      formControlName="searchSubCat" type="text" placeholder="Search" aria-label="Search" (input)="searchSubCatData(subCatSearchForm)">
+                  </div>
+              </div>
+          </form>
+        </links>
+      </mdb-navbar>
+
+      <table mdbTable mdbTableScroll scrollX="true" scrollY="true" maxHeight="500" bordered="true">
+        <thead>
+          <tr>
+            <th scope="col">Sub Category Id</th>
+            <th scope="col">Category Name</th>
+            <th scope="col">Sub Category Name</th>
+            <th scope="col">Sub Category Description</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of allSubCatList; let i = index">
+            <!-- <form id="editCatForm" style="color: #757575;" [formGroup]="editCatForm" (ngSubmit)="saveCategory(editCatForm)"> -->
+              <!-- <input id="catId" class="form-control" formControlName="catId" type="hidden"> -->
+            <th scope="row">{{item.subCatId}}</th>
+                <td *ngFor="let itr of item.catList">
+                  <span>{{itr.catName}}</span>
+                </td>
+                <td>
+                  <span>{{item.subCatName}}</span>
+                </td>
+                <td>
+                    <span>{{item.subCatDesc}}</span>
+                </td>
+            <td>
+              <button id="btnDeleteSubCat{{item.subCatId}}" type="button" class="btn btn-primary px-3"
+              (click)="subCategoryDelete(item.subCatId)"><i class="fas fa-trash" aria-hidden="true"></i></button>
+              <!-- <button id="btnSave{{item.catId}}" style="display: none" type="submit" class="btn btn-primary px-3">Save</button> -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- End of Sub Category delete form ------------------------------------------------------------------------------------------------->
+</div>

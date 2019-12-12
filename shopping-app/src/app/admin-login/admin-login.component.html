@@ -1,0 +1,42 @@
+<div class="row d-flex justify-content-center" id="admin">
+    <div class="col-md-6">
+            <mdb-card class="w-100 p-3 z-depth-0 my-5 waves-effect" id="matCard">
+
+                    <mdb-card-header class="info-color white-text text-center py-4">
+                      <h5>
+                        <strong>Admin Login</strong>
+                      </h5>
+                    </mdb-card-header>
+                  
+                    <mdb-card-body class="px-lg-5 pt-0">
+                  
+                      <form id="loginForm" style="color: #757575;" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                  
+                        <div class="md-form">
+                          <mdb-icon fas icon="user" class="prefix"></mdb-icon>
+                          <input type="email" formControlName="emailId" id="emailId" class="form-control"
+                            mdbInput mdbValidate>
+                          <label for="emailId">User Name</label>
+                          <mdb-error *ngIf="emailId.invalid && (emailId.dirty || emailId.touched)">Invalid Email</mdb-error>
+                          <mdb-success *ngIf="emailId.valid && (emailId.dirty || emailId.touched)">Valid Email</mdb-success>
+                        </div>
+                  
+                        <div class="md-form">
+                          <mdb-icon fas icon="lock" class="prefix"></mdb-icon>
+                          <input type="password" formControlName="password" id="password" class="form-control"
+                            mdbInput mdbValidate>
+                          <label for="password">Password</label>
+                          <mdb-error *ngIf="password.invalid && (password.dirty || password.touched)">Password must contain atleast 1 uppercase, 1 lowercase, 1 number and 1 special character</mdb-error>
+                          <mdb-success *ngIf="password.valid && (password.dirty || password.touched)">Valid Password</mdb-success>
+                        </div>
+                        <br>
+                        <button mdbBtn color="info" outline="true" rounded="true" block="true" class="z-depth-0 my-4 waves-effect"
+                          mdbWavesEffect type="submit">Login</button>
+                  
+                      </form>
+                  
+                    </mdb-card-body>
+                  
+                  </mdb-card>
+    </div>
+</div>
